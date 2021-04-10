@@ -43,8 +43,26 @@ body {
 
 .button-site {
   background-color: $main-color;
-  padding: 10px 20px;
+  padding: 10px 23px 10px 20px;
   border: 1px solid transparent;
+  transition: color .5s, background-color .5s;
+  position: relative;
+
+  &.btn-triangle-bottom {
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 16px;
+      right: 8px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 4px 0 4px;
+      border-color: #fafafa transparent transparent transparent;
+      margin-left: 8px;
+    }
+  }
 }
 
 .account-link {
@@ -65,6 +83,8 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
   border: 1px solid #ececec;
   background-color: #fff;
+  display: flex;
+  align-self: center;
 
   .category-top {
     display: flex;
@@ -437,7 +457,6 @@ body {
   .product-header {
     color: #222222;
     text-align: center;
-    margin-bottom: 60px;
 
     h2 {
       font-size: 30px;
@@ -456,43 +475,85 @@ body {
 
   .box-products {
     display: flex;
-    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px 0;
 
-    .product-card {
-      margin-right: 32px;
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
+    .item {
+      margin-bottom: 40px;
+      position: relative;
 
-      &:hover .text {
+      &:hover .bottom-img {
+        filter: brightness(50%);
+      }
+
+      &:hover .box-add {
+        display: flex;
+      }
+
+      &:hover {
         box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
       }
 
-      &:last-of-type {
-        margin-right: 0;
+      .box-add {
+        position: absolute;
+        top: 98px;
+        display: none;
+        justify-content: center;
+        width: 100%;
       }
 
-      img {
-        height: 280px;
-      }
-
-      .text {
-        margin-top: -5px;
-        padding: 20px 15px;
-      }
-
-      h3 {
-        color: #222222;
+      .add {
+        border: 1px solid #ffffff;
+        padding: 8px 12px;
+        color: #ffffff;
         font-size: 13px;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin-bottom: 17px;
+        font-weight: 700;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
       }
 
-      p {
-        color: $main-color;
-        font-size: 16px;
-        font-weight: 700;
+      .add:hover {
+        box-shadow: 0 0 10px #fff;
+      }
+
+      .add-img {
+        margin-right: 7px;
+      }
+
+      .product-card {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        img {
+          height: 280px;
+        }
+
+        .text {
+          margin-top: -5px;
+          padding: 20px 15px;
+        }
+
+        h3 {
+          color: #222222;
+          font-size: 13px;
+          font-weight: 400;
+          text-transform: uppercase;
+          margin-bottom: 17px;
+        }
+
+        p {
+          color: $main-color;
+          font-size: 16px;
+          font-weight: 700;
+        }
       }
     }
   }
@@ -753,6 +814,10 @@ body {
             letter-spacing: 0.4px;
             font-style: normal;
             line-height: 42px;
+
+            &:hover {
+              color: $main-color;
+            }
           }
         }
       }
@@ -781,6 +846,33 @@ body {
     .right .copy-link {
       margin-right: 8px;
     }
+  }
+
+  .networks {
+    display: flex;
+    justify-content: space-between;
+    width: 191px;
+  }
+
+  .networks i {
+    color: #ffffff;
+    font-size: 32px;
+  }
+
+  .networks a:hover i {
+    color: $main-color;
+  }
+
+  .networks a {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    color: #898989;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
   }
 }
 
