@@ -1183,7 +1183,7 @@ body {
             font-weight: bold;
 
             &.active, &.not-last {
-             color: $main-color;
+              color: $main-color;
             }
 
             &:hover {
@@ -1252,3 +1252,233 @@ body {
     }
   }
 }
+
+.woman_bg {
+  height: 777px;
+  border: 1px solid #eaeaea;
+  background: #f7f7f7 url("../img/woman.jpg") no-repeat center;
+}
+
+.tb-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection {
+  width: 1141px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin: -76px auto 119px auto;
+  padding-bottom: 122px;
+
+  & > .top {
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 63px;
+
+    .title {
+      color: $main-color;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-top: 73px;
+    }
+
+    .slider {
+      margin-top: 14px;
+      margin-bottom: 17px;
+    }
+
+    .subtitle {
+      color: #4d4d4d;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .stars {
+      margin-bottom: 26px;
+    }
+
+    .text {
+      width: 650px;
+      height: 60px;
+      color: #5e5e5e;
+      font-size: 14px;
+      font-weight: 300;
+      text-align: center;
+      margin: 0 auto 28px;
+    }
+
+    .specification {
+      display: flex;
+      color: #b9b9b9;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 37px;
+
+      span {
+        color: #2f2f2f;
+      }
+
+      .left {
+        margin-left: 26.5%;
+      }
+
+      .center {
+        width: 44px;
+      }
+    }
+
+    .price {
+      color: $main-color;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 43px;
+    }
+  }
+
+  .bottom {
+    .box-spec {
+      .center {
+        margin: 0 53px;
+      }
+
+      .box-item {
+        width: 144px;
+        align-items: start;
+        color: #2f2f2f;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+
+        #color {
+          padding-left: 30px;
+        }
+
+        .item-input {
+          color: #bcbcbc;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 24px;
+          padding: 12px 20px;
+        }
+
+        .item-input {
+          width: 144px;
+          border: 1px solid #eaeaea;
+          background-color: #ffffff;
+          margin-top: 16px;
+          margin-bottom: 23px;
+        }
+      }
+    }
+
+    button {
+      width: 537px;
+      height: 55px;
+      border: 1px solid $main-color;
+      background-color: #ffffff;
+      color: $main-color;
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .wrap {
+    position: relative;
+  }
+
+  .block-color-red {
+    width: 12px;
+    height: 12px;
+    background: red;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 14px;
+  }
+}
+
+.you-like {
+
+  .title-like {
+    color: #4d4d4d;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 72px;
+  }
+
+  .box-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 73px;
+
+    .item {
+      transition: all ease 0.2s;
+
+
+      &:hover {
+        box-shadow:1px 2px 20px 12px rgba(213,190,205,0.49);
+      }
+
+      &:hover .stars-5{
+        visibility: visible;
+
+      }
+
+      .text-like {
+        margin-bottom: 17px;
+      }
+
+      .bottom-like {
+        padding: 18px 12px 24px 15px;
+      }
+
+      .text-like {
+        color: #6f6e6e;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      .item-flex {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .stars-5 {
+        visibility: hidden;
+        transition: all ease 0.2s;
+      }
+    }
+  }
+}
+
+
+
