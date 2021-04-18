@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="57993aeb-3689-48ab-8d24-2c99a86160ba" name="Default Changelist" comment="single page - сделано 3 страницы">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
@@ -9,6 +10,9 @@
       <change beforePath="$PROJECT_DIR$/img/accesories.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/accessories.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
+=======
+    <list default="true" id="57993aeb-3689-48ab-8d24-2c99a86160ba" name="Default Changelist" comment="2 страница - скоректирована 11.04.2021" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,10 +68,15 @@
       <workItem from="1618082238598" duration="6649000" />
       <workItem from="1618153582385" duration="1373000" />
       <workItem from="1618155027342" duration="9772000" />
+<<<<<<< Updated upstream
       <workItem from="1618247660898" duration="4562000" />
       <workItem from="1618510437975" duration="681000" />
       <workItem from="1618695584395" duration="1130000" />
       <workItem from="1618729837097" duration="6362000" />
+=======
+      <workItem from="1618247660898" duration="3394000" />
+      <workItem from="1618738902394" duration="486000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="2 страница - скоректирована 11.04.2021">
       <created>1618088535256</created>

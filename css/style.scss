@@ -386,60 +386,7 @@ $main-color: #f16d7f;
   }
 }
 
-.category {
-  padding: 100px 0;
-
-  .container {
-    display: flex;
-
-    .category-left {
-      margin-right: 20px;
-    }
-
-    .badge {
-
-      .category-top {
-        margin-bottom: 20px;
-      }
-
-      .category-top, .bottom {
-        position: relative;
-
-        .badge-text {
-          position: absolute;
-          top: 20px;
-          padding: 16px 20px;
-          height: 82px;
-          background-color: #ffffff;
-
-          p {
-            color: #222222;
-            font-family: "Lato - Black", sans-serif;
-            font-size: 18px;
-            font-weight: 400;
-            text-align: left;
-            text-transform: uppercase;
-            letter-spacing: 0.45px;
-          }
-
-          h2 {
-            color: $main-color;
-            font-size: 30px;
-            letter-spacing: 0.75px;
-            text-transform: uppercase;
-          }
-        }
-      }
-    }
-  }
-
-  .category-link:hover {
-    transform: scale(1 1);
-    border: 1px solid black;
-  }
-}
-
-$news-mr-top: 100px;
+$news-mr: 100px;
 $news-box-transition: all .5s;
 
 .news-box {
@@ -447,7 +394,8 @@ $news-box-transition: all .5s;
   height: 823px;
   display: flex;
   justify-content: space-between;
-  margin-top: $news-mr-top;
+  margin-top: $news-mr;
+  margin-bottom: $news-mr;
 
   &__column {
     display: flex;
@@ -479,14 +427,22 @@ $news-box-transition: all .5s;
         }
       }
     }
+  }
 
-    &_man:hover {
+  .man:hover {
       transform: scale(1.1) translate(-50px, -50px);
-    }
+  }
 
-    &_accessories:hover {
-      transform: scale(1.3) translate(-50px, 50px);
-    }
+  .accessories:hover {
+      transform: scale(1.2) translate(-70px, 50px);
+  }
+
+  .woman:hover {
+      transform: scale(1.2) translate(70px, -50px);
+  }
+
+  .for-kids:hover {
+      transform: scale(1.1) translate(50px, 50px);
   }
 
   .link__text {
@@ -519,6 +475,35 @@ $news-box-transition: all .5s;
   }
 }
 
+.products {
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+
+    &_h2 {
+      color: #222222;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.75px;
+    }
+
+    &_p {
+      color: #9f9f9f;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.35px;
+      margin-top: 16px;
+    }
+  }
+}
+
+//это переделываю - начало
 .products {
   margin-bottom: 113px;
 
@@ -637,6 +622,7 @@ $news-box-transition: all .5s;
     }
   }
 }
+//это переделываю - конец
 
 .offer {
   margin-bottom: 100px;

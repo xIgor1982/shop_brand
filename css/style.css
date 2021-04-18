@@ -329,54 +329,13 @@
   color: #f16d7f;
 }
 
-.category {
-  padding: 100px 0;
-}
-.category .container {
-  display: flex;
-}
-.category .container .category-left {
-  margin-right: 20px;
-}
-.category .container .badge .category-top {
-  margin-bottom: 20px;
-}
-.category .container .badge .category-top, .category .container .badge .bottom {
-  position: relative;
-}
-.category .container .badge .category-top .badge-text, .category .container .badge .bottom .badge-text {
-  position: absolute;
-  top: 20px;
-  padding: 16px 20px;
-  height: 82px;
-  background-color: #ffffff;
-}
-.category .container .badge .category-top .badge-text p, .category .container .badge .bottom .badge-text p {
-  color: #222222;
-  font-family: "Lato - Black", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: left;
-  text-transform: uppercase;
-  letter-spacing: 0.45px;
-}
-.category .container .badge .category-top .badge-text h2, .category .container .badge .bottom .badge-text h2 {
-  color: #f16d7f;
-  font-size: 30px;
-  letter-spacing: 0.75px;
-  text-transform: uppercase;
-}
-.category .category-link:hover {
-  transform: scale(1 1);
-  border: 1px solid black;
-}
-
 .news-box {
   width: 100%;
   height: 823px;
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .news-box__column {
   display: flex;
@@ -403,11 +362,17 @@
 .news-box .link:hover .text_h3 {
   color: white;
 }
-.news-box .link_man:hover {
+.news-box .man:hover {
   transform: scale(1.1) translate(-50px, -50px);
 }
-.news-box .link_accessories:hover {
-  transform: scale(1.3) translate(-50px, 50px);
+.news-box .accessories:hover {
+  transform: scale(1.2) translate(-70px, 50px);
+}
+.news-box .woman:hover {
+  transform: scale(1.2) translate(70px, -50px);
+}
+.news-box .for-kids:hover {
+  transform: scale(1.1) translate(50px, 50px);
 }
 .news-box .link__text {
   position: absolute;
@@ -433,6 +398,26 @@
   font-size: 30px;
   letter-spacing: 0.75px;
   transition: color 0.5s;
+}
+
+.products__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products .title_h2 {
+  color: #222222;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+}
+.products .title_p {
+  color: #9f9f9f;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  margin-top: 16px;
 }
 
 .products {
