@@ -10,8 +10,8 @@
 		rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap' rel='stylesheet'>
 	<link rel='stylesheet' href='css/font-awesome.min.css'>
-	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'
-		integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU' crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<link rel='stylesheet' href='css/style.css'>
 </head>
@@ -25,7 +25,7 @@
 			</a>
 			<form class='header-form' action='#'>
 				<div class='header-brows'>
-					<span>Browse<i class='fa fa-caret-right'></i></span>
+					<span>Browse<i class="fa fa-caret-right" aria-hidden="true"></i></span>
 					<div class='mega-box'>
 						<div class='mega-item'>
 							<h3 class='item-heading'>Women</h3>
@@ -53,12 +53,16 @@
 					</div>
 				</div>
 				<input type='text' class='header-input' placeholder='Search for Item...'>
-				<button type='submit'><i class='fa fa-search' aria-hidden='true'></i></button>
+				<button type='submit'>
+					<i class='fas fa-search' aria-hidden='true'></i>
+				</button>
 			</form>
 		</div>
 		<div class='header-right'>
 			<div class='basket-block'>
-				<img src='img/basket.png' alt='basket' class='basket-img'>
+				<div class='basket-img'>
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				</div>
 				<div class='mega-box'>
 					<div class='mega-item'>
 						<div class='top'>
@@ -100,7 +104,9 @@
 					</div>
 				</div>
 			</div>
-			<a href='#' class='button-site account-link btn-triangle-bottom'>My Account</a>
+			<a href='#' class='button-site button-site_bottom bot'>
+				My Account
+			</a>
 		</div>
 	</div>
 </header>
@@ -108,7 +114,55 @@
 <nav class='navigation'>
 	<div class='container'>
 		<ul class='menu'>
-			<li class='menu-list'><a href='index.html' class='menu-link'>Home</a></li>
+			<li class='menu-list active'><a href='index.html' class='menu-link'>Home</a>
+				<div class='mega-box'>
+					<div class='mega-item'>
+						<h3 class='item-heading'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Blazers</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Denim</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Leggings/Pants</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Skirts/Shorts</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Accessories</a></li>
+						</ul>
+					</div>
+
+					<div class='mega-item'>
+						<h3 class='item-heading'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
+						</ul>
+
+						<h3 class='item-heading margin-top-37'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+						</ul>
+					</div>
+
+					<div class='mega-item'>
+						<h3 class='item-heading'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
+						</ul>
+						<div class='mega-img'>
+							<a href='man.html' class='item-img'><img src='img/man-glasses.jpg' alt='man-glasses'></a>
+							<div class='mega-img-text'>Super sale!</div>
+						</div>
+					</div>
+				</div>
+			</li>
 			<li class='menu-list'><a href='man.html' class='menu-link'>Man</a>
 				<div class='mega-box'>
 					<div class='mega-item'>
@@ -158,8 +212,7 @@
 					</div>
 				</div>
 			</li>
-			<li class='menu-list'><a href='single_page.html' class='menu-link'>Women</a></li>
-			<li class='menu-list'><a href='#' class='menu-link'>Kids</a>
+			<li class='menu-list'><a href='single_page.html' class='menu-link'>Women</a>
 				<div class='mega-box'>
 					<div class='mega-item'>
 						<h3 class='item-heading'>Women</h3>
@@ -201,11 +254,64 @@
 							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
 							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
 						</ul>
+						<div class='mega-img'>
+							<a href='man.html' class='item-img'><img src='img/man-glasses.jpg' alt='man-glasses'></a>
+							<div class='mega-img-text'>Super sale!</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class='menu-list'><a href='#' class='menu-link'>Kids</a>
+				<div class='mega-box center'>
+					<div class='mega-item'>
+						<h3 class='item-heading'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Blazers</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Denim</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Leggings/Pants</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Skirts/Shorts</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Accessories</a></li>
+						</ul>
+					</div>
+
+					<div class='mega-item'>
+						<h3 class='item-heading'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
+						</ul>
+
+						<h3 class='item-heading margin-top-37'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+						</ul>
+					</div>
+
+					<div class='mega-item'>
+						<h3 class='item-heading'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
+						</ul>
+						<div class='mega-img'>
+							<a href='man.html' class='item-img'><img src='img/man-glasses.jpg' alt='man-glasses'></a>
+							<div class='mega-img-text'>Super sale!</div>
+						</div>
 					</div>
 				</div>
 			</li>
 			<li class='menu-list'><a href='#' class='menu-link'>Accoseriese</a>
-				<div class='mega-box'>
+				<div class='mega-box last'>
 					<div class='mega-item'>
 						<h3 class='item-heading'>Women</h3>
 						<ul>
@@ -246,11 +352,111 @@
 							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
 							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
 						</ul>
+						<div class='mega-img'>
+							<a href='man.html' class='item-img'><img src='img/man-glasses.jpg' alt='man-glasses'></a>
+							<div class='mega-img-text'>Super sale!</div>
+						</div>
 					</div>
 				</div>
 			</li>
-			<li class='menu-list'><a href='#' class='menu-link'>Featured</a></li>
-			<li class='menu-list'><a href='#' class='menu-link'>Hot Deals</a></li>
+			<li class='menu-list'><a href='#' class='menu-link'>Featured</a>
+				<div class='mega-box last'>
+					<div class='mega-item'>
+						<h3 class='item-heading'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Blazers</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Denim</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Leggings/Pants</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Skirts/Shorts</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Accessories</a></li>
+						</ul>
+					</div>
+
+					<div class='mega-item'>
+						<h3 class='item-heading'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
+						</ul>
+
+						<h3 class='item-heading margin-top-37'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+						</ul>
+					</div>
+
+					<div class='mega-item'>
+						<h3 class='item-heading'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
+						</ul>
+						<div class='mega-img'>
+							<a href='man.html' class='item-img'><img src='img/man-glasses.jpg' alt='man-glasses'></a>
+							<div class='mega-img-text'>Super sale!</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class='menu-list last'><a href='#' class='menu-link'>Hot Deals</a>
+				<div class='mega-box last'>
+					<div class='mega-item'>
+						<h3 class='item-heading'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Blazers</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Denim</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Leggings/Pants</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Skirts/Shorts</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Accessories</a></li>
+						</ul>
+					</div>
+
+					<div class='mega-item'>
+						<h3 class='item-heading'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
+						</ul>
+
+						<h3 class='item-heading margin-top-37'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+						</ul>
+					</div>
+
+					<div class='mega-item'>
+						<h3 class='item-heading'>Women</h3>
+						<ul>
+							<li class='mega-list'><a href='#' class='mega-link'>Dresses</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Tops</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Sweaters/Knits</a></li>
+							<li class='mega-list'><a href='#' class='mega-link'>Jackets/Coats</a></li>
+						</ul>
+						<div class='mega-img'>
+							<a href='man.html' class='item-img'><img src='img/man-glasses.jpg' alt='man-glasses'></a>
+							<div class='mega-img-text'>Super sale!</div>
+						</div>
+					</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 </nav>
@@ -305,120 +511,6 @@
 	</div>
 </section>
 
-<section class='products'>
-	<div class='container'>
-		<div class='product-header'>
-			<h2>Fetured Items</h2>
-			<p>Shop for items based on what we featured in this week</p>
-		</div>
-
-		<div class='box-products'>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-1.jpg' alt='people 1' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
-					</div>
-				</a>
-				<div class='box-add'>
-					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
-				</div>
-			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-2.jpg' alt='people 2' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
-					</div>
-				</a>
-				<div class='box-add'>
-					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
-				</div>
-			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-3.jpg' alt='people 3' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
-					</div>
-				</a>
-				<div class='box-add'>
-					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
-				</div>
-			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-4.jpg' alt='people 4' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
-					</div>
-				</a>
-				<div class='box-add'>
-					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
-				</div>
-			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-5.jpg' alt='people 1' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
-					</div>
-				</a>
-				<div class='box-add'>
-					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
-				</div>
-			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-6.jpg' alt='people 2' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
-					</div>
-				</a>
-				<div class='box-add'>
-					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
-				</div>
-			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-7.jpg' alt='people 3' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
-					</div>
-				</a>
-				<div class='box-add'>
-					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
-				</div>
-			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-8.jpg' alt='people 4' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
-					</div>
-				</a>
-				<div class='box-add'>
-					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
-				</div>
-			</div>
-		</div>
-
-		<div class='product-link'>
-			<a href='#' class='button-site account-link btn-all-product'>Browse All Product<i
-				class='fa fa-long-arrow-right'></i></a>
-		</div>
-	</div>
-</section>
-
-
 <section>
 	<div class='container products'>
 		<div class='products__flex title'>
@@ -426,97 +518,102 @@
 			<p class='title_p'>Shop for items based on what we featured in this week</p>
 		</div>
 
-		<div class='box-products'>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-1.jpg' alt='people 1' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
+		<div class='product product_mg'>
+			<div class='item item_param'>
+				<a class='link-card link-card_param' href='#'>
+					<img src='img/people-1.jpg' alt='people 1' class='link_img'>
+					<div class='text text_param'>
+						<p class='text_title'>Mango People T-shirt</p>
+						<p class='text_price'>$52.00</p>
+					</div>
+				</a>
+				<div class='box-add'>
+					<a class='add' href='#'>
+						<img class='add-img' src='img/cart-add.svg' alt='link_img'>
+						Add to cart
+					</a>
+				</div>
+			</div>
+			<div class='item item_param'>
+				<a class='link-card link-card_param' href='#'>
+					<img src='img/people-2.jpg' alt='people 2' class='link_img'>
+					<div class='text text_param'>
+						<p class='text_title'>Mango People T-shirt</p>
+						<p class='text_price'>$52.00</p>
 					</div>
 				</a>
 				<div class='box-add'>
 					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
 				</div>
 			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-2.jpg' alt='people 2' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
+			<div class='item item_param'>
+				<a class='link-card link-card_param' href='#'>
+					<img src='img/people-3.jpg' alt='people 3' class='link_img'>
+					<div class='text text_param'>
+						<p class='text_title'>Mango People T-shirt</p>
+						<p class='text_price'>$52.00</p>
+					</div>
+				</a>
+				<div class='box-add'>
+					<a class='add' href='#'>
+						<img class='add-img' src='img/cart-add.svg' alt='link_img'>Add to cart
+					</a>
+				</div>
+			</div>
+			<div class='item item_param'>
+				<a class='link-card link-card_param' href='#'>
+					<img src='img/people-4.jpg' alt='people 4' class='link_img'>
+					<div class='text text_param'>
+						<p class='text_title'>Mango People T-shirt</p>
+						<p class='text_price'>$52.00</p>
 					</div>
 				</a>
 				<div class='box-add'>
 					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
 				</div>
 			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-3.jpg' alt='people 3' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
+			<div class='item item_param'>
+				<a class='link-card link-card_param' href='#'>
+					<img src='img/people-5.jpg' alt='people 1' class='link_img'>
+					<div class='text text_param'>
+						<p class='text_title'>Mango People T-shirt</p>
+						<p class='text_price'>$52.00</p>
 					</div>
 				</a>
 				<div class='box-add'>
 					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
 				</div>
 			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-4.jpg' alt='people 4' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
+			<div class='item item_param'>
+				<a class='link-card link-card_param' href='#'>
+					<img src='img/people-6.jpg' alt='people 2' class='link_img'>
+					<div class='text text_param'>
+						<p class='text_title'>Mango People T-shirt</p>
+						<p class='text_price'>$52.00</p>
 					</div>
 				</a>
 				<div class='box-add'>
 					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
 				</div>
 			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-5.jpg' alt='people 1' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
+			<div class='item item_param'>
+				<a class='link-card link-card_param' href='#'>
+					<img src='img/people-7.jpg' alt='people 3' class='link_img'>
+					<div class='text text_param'>
+						<p class='text_title'>Mango People T-shirt</p>
+						<p class='text_price'>$52.00</p>
 					</div>
 				</a>
 				<div class='box-add'>
 					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
 				</div>
 			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-6.jpg' alt='people 2' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
-					</div>
-				</a>
-				<div class='box-add'>
-					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
-				</div>
-			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-7.jpg' alt='people 3' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
-					</div>
-				</a>
-				<div class='box-add'>
-					<a class='add' href='#'><img class='add-img' src='img/cart-add.svg' alt='cart-img'>Add to cart</a>
-				</div>
-			</div>
-			<div class='item'>
-				<a class='product-card' href='#'>
-					<img src='img/people-8.jpg' alt='people 4' class='bottom-img'>
-					<div class='text'>
-						<h3>Mango People T-shirt</h3>
-						<p class='price'>$52.00</p>
+			<div class='item item_param'>
+				<a class='link-card link-card_param' href='#'>
+					<img src='img/people-8.jpg' alt='people 4' class='link_img'>
+					<div class='text text_param'>
+						<p class='text_title'>Mango People T-shirt</p>
+						<p class='text_price'>$52.00</p>
 					</div>
 				</a>
 				<div class='box-add'>
@@ -526,14 +623,13 @@
 		</div>
 
 		<div class='product-link'>
-			<a href='#' class='button-site account-link btn-all-product'>Browse All Product<i
-				class='fa fa-long-arrow-right'></i></a>
+			<a href='#' class='button-site account-link'>
+				Browse All Product
+				<i class='fas fa-long-arrow-alt-right'></i>
+			</a>
 		</div>
 	</div>
 </section>
-
-
-
 
 <section class='offer'>
 	<div class='container offer-flex'>
@@ -661,11 +757,11 @@
 	<div class='container footer-flex-bottom'>
 		<div class='left'>&copy; 2017 Brand All Rights Reserved.</div>
 		<div class='right networks'>
-			<a href=''><i class='fab fa-facebook-square'></i></a>
-			<a href=''><i class='fab fa-twitter-square'></i></a>
-			<a href=''><i class='fab fa-linkedin'></i></a>
-			<a href=''><i class='fab fa-pinterest-square'></i></a>
-			<a href=''><i class='fab fa-google-plus-square'></i></a>
+			<a href=''><i class="fab fa-facebook-square"></i></a>
+			<a href=''><i class="fab fa-twitter-square"></i></a>
+			<a href=''><i class="fab fa-linkedin"></i></a>
+			<a href=''><i class="fab fa-pinterest-square"></i></a>
+			<a href=''><i class="fab fa-google-plus-square"></i></a>
 		</div>
 	</div>
 </div>
