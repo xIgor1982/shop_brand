@@ -121,6 +121,7 @@ $main-color: #f16d7f;
       color: $main-color;
       border: 1px solid $main-color;
     }
+
     .basket-img {
       margin-right: 15px;
     }
@@ -286,7 +287,7 @@ $main-color: #f16d7f;
           justify-content: space-between;
           color: #222222;
           font-size: 16px;
-          font-weight: 700;
+          font-weight: 300;
           margin-top: 20px;
           margin-bottom: 30px;
           text-transform: uppercase;
@@ -296,7 +297,295 @@ $main-color: #f16d7f;
   }
 }
 
+.shopping-cart {
+  padding-top: 90px;
+  padding-bottom: 80px;
 
+  &_flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_grid {
+    display: grid;
+    justify-items: stretch;
+    align-items: start;
+  }
+
+  .border {
+    border: 1px solid #000;
+
+    &-box {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+
+  .input-field {
+    padding: 16px 18px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #b1b1b1;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: flex-start;
+
+    &_block {
+      width: 355px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mb-20 {
+      margin-bottom: 20px;
+    }
+
+    .get-a-quote {
+      width: 100px;
+      height: 35px;
+      border: 1px solid #eaeaea;
+      background-color: #ffffff;
+      color: #4a4a4a;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 35px;
+      cursor: pointer;
+      user-select: none;
+
+      &:active {
+        border-color: $main-color;
+        color: $main-color;
+      }
+    }
+
+    &_center {
+      .text {
+        height: 14px;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 28px;
+        margin-bottom: 24px;
+      }
+
+      .state {
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+        padding: 16px 18px;
+        color: #b1b1b1;
+        font-size: 13px;
+        font-weight: 300;
+        margin-bottom: 25px;
+      }
+
+      .apply-coupon {
+        width: 118px;
+        height: 35px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+        color: #4a4a4a;
+        font-size: 11px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 35px;
+        text-transform: uppercase;
+        cursor: pointer;
+        user-select: none;
+
+        &:active {
+          border-color: $main-color;
+          color: $main-color;
+        }
+      }
+    }
+
+    &_right {
+      background-color: #f5f3f3;
+      padding: 40px;
+      text-align: right;
+
+      .top {
+        color: #4a4a4a;
+
+        &-sub {
+          font-size: 11px;
+          font-weight: 400;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+        }
+
+        &-grand {
+          padding-bottom: 20px;
+          border-bottom: 1px solid #e2e2e2;
+          margin-bottom: 20px;
+
+          .main-color {
+            color: $main-color;
+          }
+        }
+      }
+
+      .bottom {
+        width: 100%;
+        height: 50px;
+        background-color: $main-color;
+        line-height: 50px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 10px;
+        border: 0;
+        border: 1px solid transparent;
+
+        &:hover {
+          color: $main-color;
+          border-color: $main-color;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  &__box-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 44px;
+    margin-bottom: 60px;
+  }
+
+  &__btn {
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    cursor: pointer;
+
+    &:hover.bold-text {
+      border-color: $main-color;
+      color: $main-color;
+    }
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+
+    &:last-of-type {
+      text-align: right;
+    }
+  }
+
+  .col-1 {
+    width: 40%;
+  }
+
+  .col-2 {
+    width: 15%;
+  }
+
+  .col-3 {
+    width: 15%;
+  }
+
+  .col-4 {
+    width: 10%;
+  }
+
+  .col-5 {
+    width: 16%;
+  }
+
+  .col-6 {
+    width: 10%;
+  }
+
+  .bold-text {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+  }
+
+  .details {
+    display: flex;
+
+    align-items: center;
+    height: 162px;
+
+    .text {
+      margin-left: 20px;
+
+      .bold-text {
+        margin-top: -10px;
+        margin-bottom: 17px;
+      }
+
+      strong {
+        color: #575757;
+        font-size: 13px;
+        line-height: 20px;
+      }
+
+      span {
+        color: #6f6e6e;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 300;
+      }
+    }
+
+    .inp {
+      width: 54px;
+      text-align: center;
+      display: inline-block;
+      border: 1px solid #eaeaea;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .title {
+    padding-bottom: 20px;
+  }
+
+  .img {
+    width: 100px;
+    height: 115px;
+  }
+
+  .config {
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .txt {
+    &-center {
+      width: 100%;
+      text-align: center;
+    }
+
+    &-x {
+      cursor: pointer !important;
+    }
+  }
+}
+
+.my-circle {
+  color: #c0c0c0 !important;
+  cursor: pointer !important;
+
+  &:hover {
+    color: $main-color !important;
+  }
+}
 
 
 .navigation {
@@ -691,6 +980,10 @@ $products-mg: 60px;
   }
 }
 
+.block-vis {
+  border: 1px solid #000;
+}
+
 .link-card {
   width: 263px;
   display: block;
@@ -1067,7 +1360,7 @@ $products-mg: 60px;
     justify-content: space-between;
     line-height: 148px;
 
-    a {
+    a, span {
       text-transform: uppercase;
       text-decoration: none;
       color: #636363;
@@ -1083,14 +1376,17 @@ $products-mg: 60px;
       font-weight: 400;
     }
 
-    .right a {
-      font-size: 14px;
-      font-weight: 300;
+    .right {
+      a {
+        font-size: 14px;
+        font-weight: 300;
+      }
 
       span {
         font-weight: 700;
         color: $main-color;
       }
+
     }
   }
 }
