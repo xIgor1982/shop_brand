@@ -1852,5 +1852,38 @@ $products-mg: 60px;
   }
 }
 
+.checkout {
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  .element {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 30px;
+  }
+
+  .text-summary {
+    cursor: pointer;
+
+    &::marker {
+      content: '';
+    }
+  }
+
+  .big-text {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+  }
+
+  .element {
+
+  }
+}
+
+
+
 
 
